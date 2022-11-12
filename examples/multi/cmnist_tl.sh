@@ -1,0 +1,13 @@
+#!/bin/bash
+I=$SLURM_ARRAY_TASK_ID
+
+./run_cmnist.py --config conf/sim_multi_training.json \
+    --env y_cause \
+    --methods cnn_copa cnn_erm cnn_irm ora_erm \
+    --batch_size 512 \
+    --hidden_dim 256 \
+    --lr 1e-4 \
+    --steps 20000 \
+    --seed $I \
+    --irm_lambda 0.01 \
+    --out out/multi_cmnist_yc/seed${I}

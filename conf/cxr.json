@@ -1,0 +1,6 @@
+{
+    "img_dir": "data/CXR_pooled",
+    "train": ["CXR8"],
+    "valid": "CheXpert",
+    "test": ["PadChest"]
+}

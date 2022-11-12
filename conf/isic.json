@@ -1,0 +1,6 @@
+{
+    "img_dir": "data/ISIC/images",
+    "train": ["Barcelona1", "Barcelona2", "Massachusetts", "New York1", "Queensland", "Vienna1", "Vienna2"],
+    "valid": "New York2",
+    "test": ["New York3", "Sydney"]
+}
